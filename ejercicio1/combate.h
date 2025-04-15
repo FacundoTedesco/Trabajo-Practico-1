@@ -23,6 +23,13 @@ public:
     void lanzar();
     double getPeso() const;
     string getMaterial() const;
+    string getNombre() const override { return nombre; }
+    string getOrigen() const override { return origen; }
+    int get_durabilidad() const override { return durabilidad; }
+    int getPoder() const override{ return poder; };
+    string get_tipo_combate() const override { return tipo_combate; }
+    string descripcion() const override { return "Arma de combate"; }
+    void invocar() override {}
 };
 
 // Forjada en los fuegos del infierno, temida por todos

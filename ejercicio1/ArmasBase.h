@@ -31,6 +31,9 @@ public:
     string getNombre() const override;
     int getPoder() const override;
     string getOrigen() const override;
+    string descripcion() const override { return "Item mágico"; }
+    void golpear() override {}
+    void invocar() override {}
 
     virtual string get_tipo_magia() const = 0;
     virtual int get_nivel_magico() const = 0;
@@ -51,6 +54,9 @@ public:
     string getNombre() const override;
     int getPoder() const override;
     string getOrigen() const override;
+    string descripcion() const override { return "Arma de combate"; }
+    void golpear() override {}
+    void invocar() override {}
 
     virtual string get_tipo_combate() const = 0;
     virtual int get_durabilidad() const = 0;

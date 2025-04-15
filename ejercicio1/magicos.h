@@ -24,6 +24,10 @@ public:
     bool tiene_grabado() const;
     string getAura() const;
     int get_cantidad_runas() const;
+    string get_tipo_magia() const override { return tipo_magia; }
+    int get_nivel_magico() const override { return nivel_magico; }
+    string descripcion() const override { return "Bastón mágico"; }
+    void golpear() override {}
 };
 
 // Espera: cantidad_hechizos, idioma (latín, hebreo, etc.), encuadernado (cuero/tela), paginas (número), tiene_sello
@@ -46,6 +50,11 @@ public:
     string getEncuadernado() const;
     int getPaginas() const;
     bool posee_sello() const;
+    string get_tipo_magia() const override { return tipo_magia; }
+    int get_nivel_magico() const override { return nivel_magico; }
+    string descripcion() const override { return "Libro de hechizos"; }
+    void golpear() override {}
+
 };
 
 // Espera: efecto, volumen (ml), color, viscosidad, caducidad (en días)
@@ -68,6 +77,10 @@ public:
     string getColor() const;
     double getViscosidad() const;
     int getCaducidad() const;
+    string get_tipo_magia() const override { return tipo_magia; }
+    int get_nivel_magico() const override { return nivel_magico; }
+    string descripcion() const override { return "Poción mágica"; }
+    void golpear() override {}
 };
 
 // Espera: simbolo, gema, material, brillo (nivel), protectora (sí/no)
@@ -90,6 +103,10 @@ public:
     string getMaterial() const;
     int getBrillo() const;
     bool es_protectora() const;
+    string get_tipo_magia() const override { return tipo_magia; }
+    int get_nivel_magico() const override { return nivel_magico; }
+    string descripcion() const override { return "Amuleto mágico"; }
+    void golpear() override {}
 };
 
 #endif
