@@ -23,12 +23,12 @@ public:
     void lanzar();
     double getPeso() const;
     string getMaterial() const;
-    string getNombre() const override { return nombre; }
-    string getOrigen() const override { return origen; }
-    int get_durabilidad() const override { return durabilidad; }
-    int getPoder() const override { return poder; }
-    string get_tipo_combate() const override { return tipo_combate; }
-    string descripcion() const override { return "Arma de combate"; }
+    string getNombre() const override;
+    string getOrigen() const override;
+    int get_durabilidad() const override;
+    int getPoder() const override;
+    string get_tipo_combate() const override;
+    string descripcion() const override;
     void invocar() override {}
 };
 
@@ -51,12 +51,12 @@ public:
     int get_filo_doble() const;
     string getForja() const;
     void reforzar();
-    string getNombre() const override { return nombre; }
-    string getOrigen() const override { return origen; }
-    int get_durabilidad() const override { return durabilidad; }
-    int getPoder() const override { return poder; }
-    string get_tipo_combate() const override { return tipo_combate; }
-    string descripcion() const override { return "Arma de combate"; }
+    string getNombre() const override;
+    string getOrigen() const override;
+    int get_durabilidad() const override;
+    int getPoder() const override;
+    string get_tipo_combate() const override;
+    string descripcion() const override;
     void invocar() override {}
 };
 
@@ -79,12 +79,12 @@ public:
     double getLongitud() const;
     string get_tipo_hoja() const;
     void bloquear();
-    string getNombre() const override { return nombre; }
-    string getOrigen() const override { return origen; }
-    int get_durabilidad() const override { return durabilidad; }
-    int getPoder() const override { return poder; }
-    string get_tipo_combate() const override { return tipo_combate; }
-    string descripcion() const override { return "Arma de combate"; }
+    string getNombre() const override;
+    string getOrigen() const override;
+    int get_durabilidad() const override ;
+    int getPoder() const override;
+    string get_tipo_combate() const override ;
+    string descripcion() const override ;
     void invocar() override {}
 };
 
@@ -107,12 +107,12 @@ public:
     string getPunta() const;
     void lanzar();
     void apuntar();
-    string getNombre() const override { return nombre; }
-    string getOrigen() const override { return origen; }
-    int get_durabilidad() const override { return durabilidad; }
-    int getPoder() const override { return poder; }
-    string get_tipo_combate() const override { return tipo_combate; }
-    string descripcion() const override { return "Arma de combate"; }
+    string getNombre() const override;
+    string getOrigen() const override ;
+    int get_durabilidad() const override ;
+    int getPoder() const override;
+    string get_tipo_combate() const override;
+    string descripcion() const override;
     void invocar() override {}
 };
 
@@ -135,12 +135,12 @@ public:
     bool tiene_grabados() const;
     void aplastar();
     void romper();
-    string getNombre() const override { return nombre; }
-    string getOrigen() const override { return origen; }
-    int get_durabilidad() const override { return durabilidad; }
-    int getPoder() const override { return poder; }
-    string get_tipo_combate() const override { return tipo_combate; }
-    string descripcion() const override { return "Arma de combate"; }
+    string getNombre() const override;
+    string getOrigen() const override;
+    int get_durabilidad() const override;
+    int getPoder() const override;
+    string get_tipo_combate() const override ;
+    string descripcion() const override;
     void invocar() override {}
 };
 

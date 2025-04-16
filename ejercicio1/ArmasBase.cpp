@@ -14,6 +14,10 @@ int ItemMagico::getPoder() const {
     return poder;
 }
 
+string ItemMagico::descripcion() const  { 
+    return "Item mágico"; 
+}
+
 string ItemMagico::getOrigen() const {
     return origen;
 }
@@ -29,6 +33,10 @@ string ArmaCombate::getNombre() const {
 
 int ArmaCombate::getPoder() const {
     return poder;
+}
+
+string ArmaCombate::descripcion() const { 
+    return "Arma de combate"; 
 }
 
 string ArmaCombate::getOrigen() const {

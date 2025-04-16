@@ -107,7 +107,7 @@ void Gladiador::luchar_en_arena() {
 }
 
 void Gladiador::alardear() {
-    cout << nombre << " presume de sus hazañas ante los demás guerreros." << endl;
+    cout << nombre << " presume de sus victorias ante los demás guerreros." << endl;
 }
 
 void Gladiador::entrenar() {

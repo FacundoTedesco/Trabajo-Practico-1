@@ -20,6 +20,25 @@ void HachaSimple::lanzar() {
     cout << "El hacha simple es lanzada con fuerza angelical.\n";
 }
 
+string HachaSimple::getNombre() const { 
+    return nombre; 
+}
+string HachaSimple::getOrigen() const { 
+    return origen; 
+}
+int HachaSimple::get_durabilidad() const { 
+    return durabilidad; 
+}
+int HachaSimple::getPoder() const { 
+    return poder; 
+}
+string HachaSimple::get_tipo_combate() const { 
+    return tipo_combate; 
+}
+string HachaSimple::descripcion() const { 
+    return "Arma de combate"; 
+}
+
 double HachaSimple::getPeso() const {
     return peso;
 }
@@ -44,6 +63,25 @@ void HachaDoble::girar() {
 
 int HachaDoble::get_filo_doble() const {
     return filo_doble;
+}
+
+string HachaDoble::getNombre() const { 
+    return nombre; 
+}
+string HachaDoble::getOrigen() const { 
+    return origen; 
+}
+int HachaDoble::get_durabilidad() const { 
+    return durabilidad; 
+}
+int HachaDoble::getPoder() const { 
+    return poder; 
+}
+string HachaDoble::get_tipo_combate() const { 
+    return tipo_combate; 
+}
+string HachaDoble::descripcion() const { 
+    return "Arma de combate"; 
 }
 
 string HachaDoble::getForja() const {
@@ -71,6 +109,24 @@ void Espada::desenvainar() {
 double Espada::getLongitud() const {
     return longitud;
 }
+string Espada::getNombre() const {
+     return nombre; 
+}
+string Espada::getOrigen() const { 
+    return origen; 
+}
+int Espada::get_durabilidad() const { 
+    return durabilidad;
+}
+int Espada::getPoder() const {
+     return poder; 
+}
+string Espada::get_tipo_combate() const {
+     return tipo_combate; 
+}
+string Espada::descripcion() const { 
+    return "Arma de combate";
+}
 
 string Espada::get_tipo_hoja() const {
     return tipo_hoja;
@@ -97,7 +153,24 @@ int Lanza::getAlcance() const {
 string Lanza::getPunta() const {
     return punta;
 }
-
+string Lanza::getNombre() const { 
+    return nombre; 
+}
+string Lanza::getOrigen() const { 
+    return origen; 
+}
+int Lanza::get_durabilidad() const {
+     return durabilidad; 
+}
+int Lanza::getPoder() const { 
+    return poder; 
+}
+string Lanza::get_tipo_combate() const {
+     return tipo_combate; 
+}
+string Lanza::descripcion() const {
+     return "Arma de combate"; 
+}
 void Lanza::lanzar() {
     cout << "La lanza es lanzada con precisión divina.\n";
 }
@@ -124,6 +197,24 @@ bool Garrote::tiene_grabados() const {
     return grabados;
 }
 
+string Garrote::getNombre() const {
+     return nombre; 
+}
+string Garrote::getOrigen() const { 
+    return origen; 
+}
+int Garrote::get_durabilidad() const { 
+    return durabilidad; 
+}
+int Garrote::getPoder() const {
+    return poder; 
+}
+string Garrote::get_tipo_combate() const { 
+    return tipo_combate; 
+}
+string Garrote::descripcion() const {
+     return "Arma de combate"; 
+}
 void Garrote::aplastar() {
     cout << "El garrote aplasta sin piedad.\n";
 }

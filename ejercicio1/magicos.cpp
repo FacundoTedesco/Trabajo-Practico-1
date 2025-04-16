@@ -21,6 +21,9 @@ string Baston::getMadera() const { return madera; }
 bool Baston::tiene_grabado() const { return grabado; }
 string Baston::getAura() const { return aura; }
 int Baston::get_cantidad_runas() const { return runas; }
+string Baston::get_tipo_magia() const  { return tipo_magia; }
+int Baston::get_nivel_magico() const  { return nivel_magico; }
+string Baston::descripcion() const  { return "Bastón mágico"; }
 
 // Libro de Hechizos
 LibroHechizos::LibroHechizos(string nombre, int poder, string origen, int durabilidad, string tipo_magia,
@@ -40,6 +43,9 @@ int LibroHechizos::get_cantidad_hechizos() const { return cantidad_hechizos; }
 string LibroHechizos::getIdioma() const { return idioma; }
 string LibroHechizos::getEncuadernado() const { return encuadernado; }
 int LibroHechizos::getPaginas() const { return paginas; }
+string LibroHechizos::get_tipo_magia() const  { return tipo_magia; }
+int LibroHechizos::get_nivel_magico() const  { return nivel_magico; }
+string LibroHechizos::descripcion() const  { return "Libro de hechizos"; }
 bool LibroHechizos::posee_sello() const { return tiene_sello; }
 
 // Poción
@@ -60,6 +66,9 @@ string Pocion::getEfecto() const { return efecto; }
 int Pocion::getVolumen() const { return volumen; }
 string Pocion::getColor() const { return color; }
 double Pocion::getViscosidad() const { return viscosidad; }
+string Pocion::get_tipo_magia() const  { return tipo_magia; }
+int Pocion::get_nivel_magico() const  { return nivel_magico; }
+string Pocion::descripcion() const  { return "Poción mágica"; }
 int Pocion::getCaducidad() const { return caducidad; }
 
 // Amuleto
@@ -80,4 +89,7 @@ string Amuleto::getSimbolo() const { return simbolo; }
 string Amuleto::getGema() const { return gema; }
 string Amuleto::getMaterial() const { return material; }
 int Amuleto::getBrillo() const { return brillo; }
+string Amuleto::get_tipo_magia() const  { return tipo_magia; }
+int Amuleto::get_nivel_magico() const  { return nivel_magico; }
+string Amuleto::descripcion() const  { return "Amuleto mágico"; }
 bool Amuleto::es_protectora() const { return protectora; }

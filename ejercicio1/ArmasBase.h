@@ -31,7 +31,7 @@ public:
     string getNombre() const override;
     int getPoder() const override;
     string getOrigen() const override;
-    string descripcion() const override { return "Item mágico"; }
+    string descripcion() const override;
     void golpear() override {}
     void invocar() override {}
 
@@ -54,7 +54,7 @@ public:
     string getNombre() const override;
     int getPoder() const override;
     string getOrigen() const override;
-    string descripcion() const override { return "Arma de combate"; }
+    string descripcion() const override;
     void golpear() override {}
     void invocar() override {}
 

@@ -24,9 +24,9 @@ public:
     bool tiene_grabado() const;
     string getAura() const;
     int get_cantidad_runas() const;
-    string get_tipo_magia() const override { return tipo_magia; }
-    int get_nivel_magico() const override { return nivel_magico; }
-    string descripcion() const override { return "Bastón mágico"; }
+    string get_tipo_magia() const override ;
+    int get_nivel_magico() const override ;
+    string descripcion() const override;
     void golpear() override {}
 };
 
@@ -50,9 +50,9 @@ public:
     string getEncuadernado() const;
     int getPaginas() const;
     bool posee_sello() const;
-    string get_tipo_magia() const override { return tipo_magia; }
-    int get_nivel_magico() const override { return nivel_magico; }
-    string descripcion() const override { return "Libro de hechizos"; }
+    string get_tipo_magia() const override;
+    int get_nivel_magico() const override;
+    string descripcion() const override;
     void golpear() override {}
 
 };
@@ -77,9 +77,9 @@ public:
     string getColor() const;
     double getViscosidad() const;
     int getCaducidad() const;
-    string get_tipo_magia() const override { return tipo_magia; }
-    int get_nivel_magico() const override { return nivel_magico; }
-    string descripcion() const override { return "Poción mágica"; }
+    string get_tipo_magia() const override ;
+    int get_nivel_magico() const override;
+    string descripcion() const override;
     void golpear() override {}
 };
 
@@ -103,9 +103,9 @@ public:
     string getMaterial() const;
     int getBrillo() const;
     bool es_protectora() const;
-    string get_tipo_magia() const override { return tipo_magia; }
-    int get_nivel_magico() const override { return nivel_magico; }
-    string descripcion() const override { return "Amuleto mágico"; }
+    string get_tipo_magia() const override;
+    int get_nivel_magico() const override;
+    string descripcion() const override;
     void golpear() override {}
 };
 
