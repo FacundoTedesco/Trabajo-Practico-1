@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <memory>
 #include <cstdlib>
@@ -14,13 +15,34 @@
 
 using namespace std;
 
+struct PersonajeConArmas {
+    shared_ptr<Personaje> personaje;
+    vector<shared_ptr<Arma>> armas;
+};
+
+void eliminarPersonajesNulos(vector<PersonajeConArmas>& personajesArmados) {
+    for (auto& entry : personajesArmados) {
+        if (!entry.personaje) {
+            entry.armas.clear();  // Borra las armas del personaje nulo
+        }
+    }
+
+    personajesArmados.erase(
+        remove_if(personajesArmados.begin(), personajesArmados.end(),
+                  [](const PersonajeConArmas& p) {
+                      return !p.personaje;
+                  }),
+        personajesArmados.end()
+    );
+}
+
 int main() {
     srand(static_cast<unsigned int>(time(nullptr)));
 
     int cantidadMagos = rand() % 5 + 3;     // 3 a 7
     int cantidadGuerreros = rand() % 5 + 3; // 3 a 7
 
-    vector<pair<shared_ptr<Personaje>, vector<shared_ptr<Arma>>>> personajesArmados;
+    vector<PersonajeConArmas> personajesArmados;
 
     // Crear magos
     for (int i = 0; i < cantidadMagos; ++i) {
@@ -48,10 +70,18 @@ int main() {
         personajesArmados.push_back({guerrero, armas});
     }
 
+    // Simular que un personaje muere
+    if (!personajesArmados.empty()) {
+        personajesArmados[0].personaje = nullptr;
+    }
+
+    // Eliminar personajes nulos y sus armas
+    eliminarPersonajesNulos(personajesArmados);
+
     // Mostrar resultado final
     for (const auto& par : personajesArmados) {
-        auto personaje = par.first;
-        auto armas = par.second;
+        auto personaje = par.personaje;
+        auto armas = par.armas;
 
         cout << "Personaje: " << personaje->getOrigen() << " - " << personaje->getNombre() << endl;
 
