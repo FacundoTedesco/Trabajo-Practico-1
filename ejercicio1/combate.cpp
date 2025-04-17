@@ -3,10 +3,8 @@
 using namespace std;
 
 // HachaSimple
-HachaSimple::HachaSimple(string nombre, int poder, string origen, int durabilidad, string tipo_combate,
-                         double peso, string material, string runa_grabada, bool bendecida, int nivel_precision)
-    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate),
-      peso(peso), material(material), runa_grabada(runa_grabada), bendecida(bendecida), nivel_precision(nivel_precision) {}
+HachaSimple::HachaSimple(string nombre, int poder, string origen, int durabilidad, string tipo_combate, double peso, string material, string runa_grabada, bool bendecida, int nivel_precision)
+    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate), peso(peso), material(material), runa_grabada(runa_grabada), bendecida(bendecida), nivel_precision(nivel_precision) {}
 
 void HachaSimple::golpear() {
     cout << "El hacha simple golpea con precisión divina.\n";
@@ -48,10 +46,8 @@ string HachaSimple::getMaterial() const {
 }
 
 // HachaDoble
-HachaDoble::HachaDoble(string nombre, int poder, string origen, int durabilidad, string tipo_combate,
-                       int filo_doble, string forja, bool maldita, string emblema_demonio, int nivel_sangrado)
-    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate),
-      filo_doble(filo_doble), forja(forja), maldita(maldita), emblema_demonio(emblema_demonio), nivel_sangrado(nivel_sangrado) {}
+HachaDoble::HachaDoble(string nombre, int poder, string origen, int durabilidad, string tipo_combate, int filo_doble, string forja, bool maldita, string emblema_demonio, int nivel_sangrado)
+    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate), filo_doble(filo_doble), forja(forja), maldita(maldita), emblema_demonio(emblema_demonio), nivel_sangrado(nivel_sangrado) {}
 
 void HachaDoble::golpear() {
     cout << "El hacha doble desgarra con furia demoníaca.\n";
@@ -93,10 +89,8 @@ void HachaDoble::reforzar() {
 }
 
 // Espada
-Espada::Espada(string nombre, int poder, string origen, int durabilidad, string tipo_combate,
-               double longitud, string tipo_hoja, bool consagrada, string gema_incrustada, string estilo_esgrima)
-    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate),
-      longitud(longitud), tipo_hoja(tipo_hoja), consagrada(consagrada), gema_incrustada(gema_incrustada), estilo_esgrima(estilo_esgrima) {}
+Espada::Espada(string nombre, int poder, string origen, int durabilidad, string tipo_combate, double longitud, string tipo_hoja, bool consagrada, string gema_incrustada, string estilo_esgrima)
+    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate), longitud(longitud), tipo_hoja(tipo_hoja), consagrada(consagrada), gema_incrustada(gema_incrustada), estilo_esgrima(estilo_esgrima) {}
 
 void Espada::golpear() {
     cout << "La espada emite una estocada divina.\n";
@@ -137,10 +131,8 @@ void Espada::bloquear() {
 }
 
 // Lanza
-Lanza::Lanza(string nombre, int poder, string origen, int durabilidad, string tipo_combate,
-             int alcance, string punta, bool puede_extenderse, string empuñadura, string esencia_divina)
-    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate),
-      alcance(alcance), punta(punta), puede_extenderse(puede_extenderse), empuñadura(empuñadura), esencia_divina(esencia_divina) {}
+Lanza::Lanza(string nombre, int poder, string origen, int durabilidad, string tipo_combate, int alcance, string punta, bool puede_extenderse, string empuñadura, string esencia_divina)
+    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate), alcance(alcance), punta(punta), puede_extenderse(puede_extenderse), empuñadura(empuñadura), esencia_divina(esencia_divina) {}
 
 void Lanza::golpear() {
     cout << "La lanza perfora con fuerza celestial.\n";
@@ -180,10 +172,8 @@ void Lanza::apuntar() {
 }
 
 // Garrote
-Garrote::Garrote(string nombre, int poder, string origen, int durabilidad, string tipo_combate,
-                 string tipo_madera, bool grabados, int peso_bruto, string reliquia_embebida, bool invocador_de_miedo)
-    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate),
-      tipo_madera(tipo_madera), grabados(grabados), peso_bruto(peso_bruto), reliquia_embebida(reliquia_embebida), invocador_de_miedo(invocador_de_miedo) {}
+Garrote::Garrote(string nombre, int poder, string origen, int durabilidad, string tipo_combate, string tipo_madera, bool grabados, int peso_bruto, string reliquia_embebida, bool invocador_de_miedo)
+    : ArmaCombate(nombre, poder, origen, durabilidad, tipo_combate), tipo_madera(tipo_madera), grabados(grabados), peso_bruto(peso_bruto), reliquia_embebida(reliquia_embebida), invocador_de_miedo(invocador_de_miedo) {}
 
 void Garrote::golpear() {
     cout << "El garrote impacta brutalmente.\n";

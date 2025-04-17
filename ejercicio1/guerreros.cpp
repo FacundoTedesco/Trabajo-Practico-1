@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// ----------- Bárbaro -------------
+//Bárbaro
 Barbaro::Barbaro(string nombre, int nivel_fe, int resistencia, string origen, int furia)
     : Guerrero(nombre, nivel_fe, resistencia, origen, furia){}
 
@@ -26,7 +26,7 @@ void Barbaro::aumentar_furia() {
     furia += 5;
 }
 
-// ----------- Paladín -------------
+//Paladín
 Paladin::Paladin(string nombre, int nivel_fe, int resistencia, string origen, int bendicion)
     : Guerrero(nombre, nivel_fe, resistencia, origen, bendicion){}
 
@@ -50,7 +50,7 @@ void Paladin::aumentar_bendicion() {
     bendicion += 3;
 }
 
-// ----------- Caballero -------------
+//Caballero
 Caballero::Caballero(string nombre, int nivel_fe, int resistencia, string origen, int honor)
     : Guerrero(nombre, nivel_fe, resistencia, origen, honor){}
 
@@ -74,7 +74,7 @@ void Caballero::aumentar_honor() {
     honor += 2;
 }
 
-// ----------- Mercenario -------------
+//Mercenario
 Mercenario::Mercenario(string nombre, int nivel_fe, int resistencia, string origen, int monedas)
     : Guerrero(nombre, nivel_fe, resistencia, origen, monedas){}
 
@@ -98,7 +98,7 @@ void Mercenario::cobrar() {
     monedas += 10;
 }
 
-// ----------- Gladiador -------------
+//Gladiador
 Gladiador::Gladiador(string nombre, int nivel_fe, int resistencia, string origen, int victorias)
     : Guerrero(nombre, nivel_fe, resistencia, origen , victorias) {}
 

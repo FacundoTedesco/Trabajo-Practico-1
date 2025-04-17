@@ -71,4 +71,4 @@ private:
     int victorias;                     // Cantidad de combates ganados
 };
 
-#endif // GUERREROS_H
+#endif 

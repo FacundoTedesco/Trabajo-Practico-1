@@ -10,7 +10,7 @@ public:
     virtual int get_nivel_fe() const = 0;
     virtual int getEnergia() const = 0;
     virtual string getOrigen() const = 0;
-    virtual ~Personaje() {} // Destructor virtual obligatorio
+    virtual ~Personaje() {} 
 };
 
 class Guerrero : public Personaje {
@@ -49,4 +49,4 @@ protected:
     int sabiduria; 
 };
 
-#endif // PERSONAJES_H
+#endif

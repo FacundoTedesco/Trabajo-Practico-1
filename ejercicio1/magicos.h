@@ -4,7 +4,6 @@
 #include "ArmasBase.h"
 using namespace std;
 
-// Espera: longitud (cm), madera (tipo de madera), grabado (sí/no), aura (nombre), runas (número de runas)
 class Baston : public ItemMagico {
 private:
     double longitud;
@@ -14,8 +13,7 @@ private:
     int runas;
 
 public:
-    Baston(string nombre, int poder, string origen, int durabilidad, string tipo_magia,
-           double longitud, string madera, bool grabado, string aura, int runas);
+    Baston(string nombre, int poder, string origen, int durabilidad, string tipo_magia, double longitud, string madera, bool grabado, string aura, int runas);
 
     void invocar() override;
     void canalizar();
@@ -30,7 +28,6 @@ public:
     void golpear() override {}
 };
 
-// Espera: cantidad_hechizos, idioma (latín, hebreo, etc.), encuadernado (cuero/tela), paginas (número), tiene_sello
 class LibroHechizos : public ItemMagico {
 private:
     int cantidad_hechizos;
@@ -40,8 +37,7 @@ private:
     bool tiene_sello;
 
 public:
-    LibroHechizos(string nombre, int poder, string origen, int durabilidad, string tipo_magia,
-                  int cantidad_hechizos, string idioma, string encuadernado, int paginas, bool tiene_sello);
+    LibroHechizos(string nombre, int poder, string origen, int durabilidad, string tipo_magia, int cantidad_hechizos, string idioma, string encuadernado, int paginas, bool tiene_sello);
 
     void invocar() override;
     void leer();
@@ -57,7 +53,6 @@ public:
 
 };
 
-// Espera: efecto, volumen (ml), color, viscosidad, caducidad (en días)
 class Pocion : public ItemMagico {
 private:
     string efecto;
@@ -67,8 +62,7 @@ private:
     int caducidad;
 
 public:
-    Pocion(string nombre, int poder, string origen, int durabilidad, string tipo_magia,
-           string efecto, int volumen, string color, double viscosidad, int caducidad);
+    Pocion(string nombre, int poder, string origen, int durabilidad, string tipo_magia, string efecto, int volumen, string color, double viscosidad, int caducidad);
 
     void invocar() override;
     void beber();
@@ -83,7 +77,6 @@ public:
     void golpear() override {}
 };
 
-// Espera: simbolo, gema, material, brillo (nivel), protectora (sí/no)
 class Amuleto : public ItemMagico {
 private:
     string simbolo;
@@ -93,8 +86,7 @@ private:
     bool protectora;
 
 public:
-    Amuleto(string nombre, int poder, string origen, int durabilidad, string tipo_magia,
-            string simbolo, string gema, string material, int brillo, bool protectora);
+    Amuleto(string nombre, int poder, string origen, int durabilidad, string tipo_magia, string simbolo, string gema, string material, int brillo, bool protectora);
 
     void invocar() override;
     void activar();

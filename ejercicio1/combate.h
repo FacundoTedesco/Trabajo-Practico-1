@@ -4,7 +4,6 @@
 #include "ArmasBase.h"
 using namespace std;
 
-// Arma de los guerreros celestiales, ligera pero mortal
 class HachaSimple : public ArmaCombate {
 private:
     double peso;                     // Peso del arma (en kg)
@@ -13,10 +12,7 @@ private:
     bool bendecida;                  // Indica si el arma ha sido bendecida
     int nivel_precision;             // Nivel de precisión en combate (1-10)
 public:
-    HachaSimple(string nombre, int poder, string origen,
-                int durabilidad, string tipo_combate,
-                double peso, string material,
-                string runa_grabada, bool bendecida, int nivel_precision);
+    HachaSimple(string nombre, int poder, string origen, int durabilidad, string tipo_combate, double peso, string material, string runa_grabada, bool bendecida, int nivel_precision);
 
     void golpear() override;
     void afilar();
@@ -32,7 +28,6 @@ public:
     void invocar() override {}
 };
 
-// Forjada en los fuegos del infierno, temida por todos
 class HachaDoble : public ArmaCombate {
 private:
     int filo_doble;                  // Cantidad de filos (usualmente 2)
@@ -41,10 +36,7 @@ private:
     string emblema_demonio;    // Emblema que representa su origen demoníaco
     int nivel_sangrado;             // Nivel de sangrado que puede provocar (1-10)
 public:
-    HachaDoble(string nombre, int poder, string origen,
-               int durabilidad, string tipo_combate,
-               int filo_doble, string forja,
-               bool maldita, string emblema_demonio, int nivel_sangrado);
+    HachaDoble(string nombre, int poder, string origen, int durabilidad, string tipo_combate, int filo_doble, string forja, bool maldita, string emblema_demonio, int nivel_sangrado);
 
     void golpear() override;
     void girar();
@@ -60,7 +52,6 @@ public:
     void invocar() override {}
 };
 
-// Espada de juicio usada por los arcángeles
 class Espada : public ArmaCombate {
 private:
     double longitud;                // Longitud total (en cm)
@@ -69,10 +60,7 @@ private:
     string gema_incrustada;   // Gema mágica incrustada en la empuñadura
     string estilo_esgrima;    // Estilo de esgrima para el cual está diseñada
 public:
-    Espada(string nombre, int poder, string origen,
-           int durabilidad, string tipo_combate,
-           double longitud, string tipo_hoja,
-           bool consagrada, string gema_incrustada, string estilo_esgrima);
+    Espada(string nombre, int poder, string origen, int durabilidad, string tipo_combate, double longitud, string tipo_hoja, bool consagrada, string gema_incrustada, string estilo_esgrima);
 
     void golpear() override;
     void desenvainar();
@@ -88,7 +76,6 @@ public:
     void invocar() override {}
 };
 
-// Lanza utilizada en batallas celestiales, alcanza grandes distancias
 class Lanza : public ArmaCombate {
 private:
     int alcance;                    // Distancia máxima efectiva (en metros)
@@ -97,10 +84,7 @@ private:
     string empuñadura;         // Tipo de empuñadura
     string esencia_divina;     // Tipo de esencia infundida
 public:
-    Lanza(string nombre, int poder, string origen,
-          int durabilidad, string tipo_combate,
-          int alcance, string punta,
-          bool puede_extenderse, string empuñadura, string esencia_divina);
+    Lanza(string nombre, int poder, string origen, int durabilidad, string tipo_combate, int alcance, string punta, bool puede_extenderse, string empuñadura, string esencia_divina);
 
     void golpear() override;
     int getAlcance() const;
@@ -116,7 +100,6 @@ public:
     void invocar() override {}
 };
 
-// Arma brutal de los demonios bárbaros, hecha con madera maldita
 class Garrote : public ArmaCombate {
 private:
     string tipo_madera;        // Madera usada (ej: roble oscuro)
@@ -125,10 +108,7 @@ private:
     string reliquia_embebida;  // Objeto místico incrustado en el arma
     bool invocador_de_miedo;        // Si infunde miedo al usarse
 public:
-    Garrote(string nombre, int poder, string origen,
-            int durabilidad, string tipo_combate,
-            string tipo_madera, bool grabados,
-            int peso_bruto, string reliquia_embebida, bool invocador_de_miedo);
+    Garrote(string nombre, int poder, string origen, int durabilidad, string tipo_combate, string tipo_madera, bool grabados, int peso_bruto, string reliquia_embebida, bool invocador_de_miedo);
 
     void golpear() override;
     string get_tipo_madera() const;

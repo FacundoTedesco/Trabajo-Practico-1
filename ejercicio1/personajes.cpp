@@ -1,7 +1,7 @@
 #include "personajes.h"
 using namespace std;
 
-// Implementación de Guerrero
+//Guerrero
 Guerrero::Guerrero(string nombre, int nivel_fe, int energia, string origen, int resistencia)
     : nombre(nombre), nivel_fe(nivel_fe), energia(energia), origen(origen), resistencia(resistencia) {}
 
@@ -11,7 +11,7 @@ int Guerrero::getEnergia() const { return energia; }
 string Guerrero::getOrigen() const { return origen; }
 int Guerrero::getResistencia() const { return resistencia; } 
 
-// Implementación de Mago
+//Mago
 Mago::Mago(string nombre, int nivel_fe, int energia, string origen,  int sabiduria)
     : nombre(nombre), nivel_fe(nivel_fe), energia(energia), origen(origen), sabiduria(sabiduria){}
 
